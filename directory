@@ -2,4 +2,4 @@ FlowTimeSimulator-App/
 |-- app.py
 |-- best_xgb_model.json
 |-- scaler.pkl
-|-- requirements.txt
+|-- logs.txt
