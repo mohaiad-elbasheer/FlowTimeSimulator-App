@@ -7,10 +7,10 @@ from sklearn.preprocessing import StandardScaler
 
 # Load the trained model
 best_model = XGBRegressor()
-best_model.load_model("/content/drive/MyDrive/Colab Notebooks/best_xgb_model.json")
+best_model.load_model("best_xgb_model.json")
 
 # Load the scaler
-scaler = joblib.load("/content/drive/MyDrive/Colab Notebooks/scaler.pkl")
+scaler = joblib.load("scaler.pkl")
 
 # Define the list of predictors
 predictors = [
