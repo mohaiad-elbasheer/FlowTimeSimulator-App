@@ -44,13 +44,13 @@ inputs['ArrivalInterval'] = st.slider('Arrival Interval (Hours)', min_value=0, m
 left_col, center_col, right_col = st.columns([1, 2, 1])
 
 with left_col:
-    st.markdown("### Queue Size (Hours)")
+    st.markdown("### Queue Size (Number of orders in Queue)")
     for predictor in queue_predictors:
         key = f"Queue_{predictor}"
         inputs[predictor] = st.slider(f"{predictor.split('_')[-1]}", min_value=0, max_value=100, value=50, step=1, key=key)
 
 with right_col:
-    st.markdown("### WIP (Hours)")
+    st.markdown("### WIP (Number of orders in Workstation)")
     for predictor in wip_predictors:
         key = f"WIP_{predictor}"
         inputs[predictor] = st.slider(f"{predictor.split('_')[-1]}", min_value=0, max_value=100, value=50, step=1, key=key)
